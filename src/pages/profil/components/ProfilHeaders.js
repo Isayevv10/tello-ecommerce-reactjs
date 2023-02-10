@@ -21,7 +21,7 @@ const ProfilHeaders = () => {
     localStorage.removeItem("commercejs_customer_token");
     localStorage.removeItem("logged");
     dispatch(setIsLogged(false));
-    navigate("/");
+    navigate("/tello-ecommerce-reactjs");
   };
 
   return (
