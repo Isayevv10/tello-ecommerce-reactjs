@@ -44,7 +44,7 @@ function App() {
       <Categories />
 
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/tello-ecommerce-reactjs' element={<Home />} />
         <Route path='/products' element={<AllProducts />} />
         <Route path='/products/:id' element={<EachProduct />} />
         <Route path='/cart' element={<Cart />} />
