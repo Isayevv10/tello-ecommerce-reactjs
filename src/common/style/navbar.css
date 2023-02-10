@@ -1,0 +1,186 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.navbar-container .logo {
+  background-image: url("../../assets/svg/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 150px;
+  margin-top: 20px;
+}
+.navbar-container .searching input {
+  width: 590px;
+  height: 40px;
+  background: #f2f2f2;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-indent: 30px;
+  margin-top: 24px;
+  outline: none;
+}
+.navbar-container .searching .dataResult {
+  border: 2px solid transparent;
+  background-color: #fff;
+  z-index: 999;
+  position: absolute;
+  width: 565px;
+  height: 250px;
+  overflow-y: auto;
+  border-radius: 0px 0px 9px 9px;
+  padding-left: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-container .searching .dataResult::-webkit-scrollbar {
+  display: none;
+}
+.navbar-container .searching .dataResult a {
+  text-decoration: none;
+  color: black;
+}
+.navbar-container .searching .dataResult a .search-container {
+  display: flex;
+  margin-top: 12px;
+}
+.navbar-container .searching .dataResult a .search-container div:nth-child(2) p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.navbar-container .searching .dataResult a .search-container div:nth-child(2) p:nth-child(1) {
+  margin-bottom: 14px;
+}
+.navbar-container .mini-logos {
+  display: flex;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+  margin-top: 35px;
+}
+.navbar-container .mini-logos .basket-container {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+}
+.navbar-container .mini-logos .basket-container .product-count {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #2dd06e;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 2px;
+  width: 21px;
+  height: 19px;
+}
+.navbar-container .mini-logos div {
+  cursor: pointer;
+}
+
+.mobile-navbar-container {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.mobile-navbar-container .mobile-container {
+  display: flex;
+  justify-content: space-around;
+}
+.mobile-navbar-container .mobile-container .hamburger {
+  margin-top: 25px;
+  cursor: pointer;
+}
+.mobile-navbar-container .mobile-container .logo {
+  background-image: url("../../assets/svg/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 120px;
+  margin-top: 12px;
+}
+.mobile-navbar-container .mobile-container .mini-logos {
+  display: flex;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+  margin-top: 24px;
+}
+.mobile-navbar-container .mobile-container .mini-logos .basket-container {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+}
+.mobile-navbar-container .mobile-container .mini-logos .basket-container .product-count {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #2dd06e;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 2px;
+  width: 21px;
+  height: 19px;
+}
+.mobile-navbar-container .mobile-container .mini-logos div {
+  cursor: pointer;
+}
+.mobile-navbar-container .searching input {
+  background: #f7f9fc;
+  border: 1px solid #e4e9f2;
+  border-radius: 8px;
+  text-indent: 45px;
+  width: 100%;
+  height: 40px;
+  margin-top: 12px;
+  outline: none;
+}
+.mobile-navbar-container .searching .dataResult {
+  border: 2px solid transparent;
+  background-color: #fff;
+  z-index: 999;
+  position: absolute;
+  width: 88%;
+  height: 180px;
+  overflow-y: auto;
+  border-radius: 0px 0px 9px 9px;
+  padding-left: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.mobile-navbar-container .searching .dataResult::-webkit-scrollbar {
+  display: none;
+}
+.mobile-navbar-container .searching .dataResult a {
+  text-decoration: none;
+  color: black;
+}
+.mobile-navbar-container .searching .dataResult a .search-container {
+  display: flex;
+  margin-top: 12px;
+}
+.mobile-navbar-container .searching .dataResult a .search-container div:nth-child(2) p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.mobile-navbar-container .searching .dataResult a .search-container div:nth-child(2) p:nth-child(1) {
+  margin-bottom: 14px;
+}
+
+@media screen and (max-width: 375px) {
+  .navbar-container {
+    display: none;
+  }
+  .mobile-navbar-container {
+    display: block;
+  }
+}/*# sourceMappingURL=navbar.css.map */

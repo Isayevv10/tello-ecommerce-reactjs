@@ -1,0 +1,130 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+.container-login {
+  display: flex;
+  justify-content: center;
+
+  .login-1 {
+    flex: 50%;
+
+    h2 {
+      text-align: center;
+    }
+
+    .register-choice {
+      display: flex;
+      column-gap: 60px;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 32px;
+
+      .img-div-fb {
+        display: inline-block;
+        @include size(32px, 18px);
+        padding: 7px 0;
+        background-image: url("../../../assets/images/bg-fb.png");
+        background-size: cover;
+      }
+      .img-div-google {
+        display: inline-block;
+        @include size(32px, 18px);
+        padding: 7px 0;
+        background-image: url("../../../assets/images/google-bg.png");
+        background-size: cover;
+      }
+    }
+
+    .login-form {
+      width: fit-content;
+      margin: 24px auto 132px auto;
+
+      .text-danger {
+        color: red;
+        margin-left: 10px;
+      }
+
+      .password-question {
+        text-align: right;
+        a {
+          text-decoration: none;
+        }
+      }
+
+      input {
+        background-color: #f2f2f2;
+        border: none;
+        outline: none;
+      }
+
+      input[type="email"],
+      input[type="text"] {
+        margin-top: 8px;
+        border-radius: 8px;
+        text-indent: 16px;
+        @include size(312px, 48px);
+      }
+
+      button {
+        margin-top: 44px;
+        color: #fff;
+        background-color: #2dd06e;
+        @include size(100%, 48px);
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        line-height: 16px;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+
+      .linkToSignup {
+        display: none;
+      }
+    }
+  }
+
+  .login-2 {
+    flex: 50%;
+    text-align: center;
+    div {
+      margin-top: 34px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container-login {
+    display: block;
+
+    .login-1 {
+      .login-form {
+        input[type="email"] {
+          width: 303px;
+        }
+
+        .linkToSignup {
+          display: block;
+          text-align: center;
+          margin-top: 24px;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .login-2 {
+      display: none;
+    }
+  }
+}

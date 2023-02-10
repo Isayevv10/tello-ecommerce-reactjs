@@ -1,0 +1,50 @@
+.payment-container {
+  border: 1px solid;
+  display: flex;
+  column-gap: 60px;
+  small {
+    color: red;
+  }
+
+  .inputInfo {
+    margin-top: 8px;
+    height: 45px;
+    width: 312px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+  }
+
+  .payment-left {
+    flex: 50%;
+    div {
+      margin-top: 24px;
+    }
+  }
+
+  .payment-right {
+    flex: 50%;
+
+    div {
+      margin-top: 24px;
+    }
+  }
+
+  .payment-btn {
+    width: max-content;
+    margin-top: 30px;
+
+    button {
+      background: #2dd06e;
+      cursor: pointer;
+      border-radius: 8px;
+      color: #fff;
+      padding: 16px 80px;
+      font-size: 14px;
+      line-height: 16px;
+      border: none;
+      text-align: center;
+    }
+  }
+}

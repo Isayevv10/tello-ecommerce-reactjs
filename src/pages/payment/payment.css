@@ -1,0 +1,14 @@
+.payment-container {
+  display: flex;
+  border: 1px solid;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.payment-container .flex-1 {
+  flex: 60%;
+  border: 1px solid;
+}
+.payment-container .flex-2 {
+  border: 1px solid;
+  flex: 40%;
+}/*# sourceMappingURL=payment.css.map */

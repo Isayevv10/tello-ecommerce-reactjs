@@ -1,0 +1,93 @@
+@import "./utils/mixins";
+.container-sidebar {
+  margin-left: -1400px;
+  @include position(1);
+}
+
+.sidenav {
+  margin-left: 0;
+  height: 100%;
+  background-color: #fff;
+  @include position(999);
+}
+
+.navbar {
+  display: flex;
+
+  #mdiv {
+    @include size(25px, 25px);
+    margin-top: 10px;
+    margin-right: 17px;
+    cursor: pointer;
+  }
+
+  .mdiv {
+    @include size(2px, 25px);
+    margin-left: 12px;
+    background-color: black;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+
+  .md {
+    @include size(2px, 25px);
+    background-color: black;
+    transform: rotate(90deg);
+    z-index: 2;
+  }
+
+  .navbar-logo {
+    background-image: url("../../assets/svg/logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include size(120px, 42px);
+  }
+}
+
+.links {
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 16px;
+
+  div {
+    margin-top: 21px;
+    cursor: pointer;
+  }
+}
+
+.btns {
+  display: flex;
+  gap: 17px;
+  margin-top: 110px;
+  margin-bottom: 35px;
+
+  div:nth-child(1) {
+    button {
+      background-color: #fff;
+    }
+  }
+  div:nth-child(2) {
+    button {
+      background-color: #2dd06e;
+    }
+  }
+
+  button {
+    border: 1px solid #2dd06e;
+    border-radius: 8px;
+    padding: 16px 53px;
+
+    a {
+      text-decoration: none;
+      text-align: center;
+      letter-spacing: 0.0125em;
+    }
+    .sign-up {
+      color: #2dd06e;
+    }
+
+    .sign-in {
+      color: #fff;
+    }
+  }
+}

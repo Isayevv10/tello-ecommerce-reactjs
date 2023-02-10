@@ -1,0 +1,112 @@
+.container-login {
+  display: flex;
+  justify-content: center;
+}
+.container-login .login-1 {
+  flex: 50%;
+}
+.container-login .login-1 h2 {
+  text-align: center;
+}
+.container-login .login-1 .register-choice {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.container-login .login-1 .register-choice .img-div-fb {
+  display: inline-block;
+  width: 32px;
+  height: 18px;
+  padding: 7px 0;
+  background-image: url("../../../assets/images/bg-fb.png");
+  background-size: cover;
+}
+.container-login .login-1 .register-choice .img-div-google {
+  display: inline-block;
+  width: 32px;
+  height: 18px;
+  padding: 7px 0;
+  background-image: url("../../../assets/images/google-bg.png");
+  background-size: cover;
+}
+.container-login .login-1 .login-form {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 24px auto 132px auto;
+}
+.container-login .login-1 .login-form .text-danger {
+  color: red;
+  margin-left: 10px;
+}
+.container-login .login-1 .login-form .password-question {
+  text-align: right;
+}
+.container-login .login-1 .login-form .password-question a {
+  text-decoration: none;
+}
+.container-login .login-1 .login-form input {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+.container-login .login-1 .login-form input[type=email],
+.container-login .login-1 .login-form input[type=text] {
+  margin-top: 8px;
+  border-radius: 8px;
+  text-indent: 16px;
+  width: 312px;
+  height: 48px;
+}
+.container-login .login-1 .login-form button {
+  margin-top: 44px;
+  color: #fff;
+  background-color: #2dd06e;
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+.container-login .login-1 .login-form button a {
+  text-decoration: none;
+  color: white;
+}
+.container-login .login-1 .login-form .linkToSignup {
+  display: none;
+}
+.container-login .login-2 {
+  flex: 50%;
+  text-align: center;
+}
+.container-login .login-2 div {
+  margin-top: 34px;
+}
+.container-login .login-2 div a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+  .container-login {
+    display: block;
+  }
+  .container-login .login-1 .login-form input[type=email] {
+    width: 303px;
+  }
+  .container-login .login-1 .login-form .linkToSignup {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+  }
+  .container-login .login-1 .login-form .linkToSignup a {
+    text-decoration: none;
+  }
+  .container-login .login-2 {
+    display: none;
+  }
+}/*# sourceMappingURL=login.css.map */

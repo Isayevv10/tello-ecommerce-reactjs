@@ -1,0 +1,62 @@
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid;
+  padding-left: 20px;
+}
+.content-header div {
+  flex: 50%;
+}
+.content-header div button {
+  font-size: 20px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+.content-detail {
+  padding-left: 20px;
+}
+.content-detail input[type=radio] {
+  display: none;
+}
+.content-detail input[type=radio] + label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #2dd06e;
+  position: relative;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.content-detail input[type=radio]:checked + label {
+  background-color: #2dd06e;
+}
+.content-detail input[type=radio]:checked + label::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 15px;
+  border: 2px solid #fff;
+  left: 0;
+  right: 0;
+  top: -6px;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(45deg);
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.content-detail span {
+  font-size: 18px;
+  line-height: 30px;
+  color: #4f4f4f;
+  margin-left: 16px;
+}
+.content-detail p {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=accordion.css.map */

@@ -1,0 +1,223 @@
+@import "./style/utils/mixins";
+
+.mobile-container {
+  display: none;
+}
+
+// empty card starts
+.empty-card-container {
+  text-align: center;
+  margin: 105px 0;
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #bdbdbd;
+    margin: 48px 0 32px 0;
+  }
+
+  button {
+    background-color: #2dd06e;
+    height: 48px;
+    width: 280px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+// empty card ends
+
+.cart-container {
+  background-color: #e5e5e5;
+  border: 1px solid transparent;
+  padding-top: 10px;
+
+  .cart-flex-container {
+    display: flex;
+    column-gap: 32px;
+    margin-bottom: 110px;
+
+    .cart-1 {
+      flex: 60%;
+      padding-left: 21px;
+
+      .all-product-count {
+        font-size: 20px;
+        line-height: 28px;
+        color: #4f4f4f;
+      }
+      .cart-grid-container {
+        display: grid;
+        grid-template-columns: 80px 270px 140px 80px;
+        justify-content: space-evenly;
+        margin-top: 32px;
+        border-radius: 10px;
+        background-color: #fff;
+
+        .cart-grid-1 {
+          @include display(flex, center, center);
+
+          input {
+            width: 22px;
+            height: 22px;
+          }
+        }
+
+        .cart-grid-3 {
+          p {
+            font-size: 16px;
+            line-height: 22px;
+            color: #333333;
+            font-weight: 800;
+          }
+          div {
+            span:nth-child(1) {
+              color: red;
+            }
+          }
+        }
+
+        .cart-grid-4 {
+          .productAmount {
+            @include display(flex, center, center);
+            text-align: center;
+            height: 80px;
+
+            span {
+              font-size: 16px;
+              line-height: 20px;
+              margin: 0 30px;
+              color: #1d2123;
+            }
+            button {
+              cursor: pointer;
+              background-color: #fff;
+              border: none;
+              outline: none;
+              font-size: 18px;
+            }
+          }
+        }
+
+        .cart-grid-5 {
+          @include display(flex, right, center);
+          cursor: pointer;
+        }
+
+        .cart-image {
+          width: 50px;
+          height: 74px;
+          object-fit: scale-down;
+        }
+      }
+    }
+
+    .cart-2 {
+      flex: 40%;
+
+      table {
+        width: 60%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        background-color: #fff;
+        border-radius: 16px;
+
+        td {
+          padding: 7px;
+        }
+
+        tr:nth-child(1) {
+          th {
+            font-size: 20px;
+          }
+        }
+
+        tr:nth-of-type(5) {
+          border-collapse: collapse;
+          border-bottom: 1px solid black;
+        }
+
+        tr:last-of-type {
+          td:nth-child(1) {
+            color: #1d2123;
+            font-size: 18px;
+          }
+          td:nth-child(2) {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cart-container {
+    margin-top: 16px;
+    padding: 0;
+
+    .cart-flex-container {
+      display: none;
+    }
+
+    .all-product-count {
+      margin: 40px 0 24px 24px;
+    }
+
+    .mobile-container {
+      display: block;
+      .basket-container {
+        background-color: #fff;
+        width: 273px;
+        height: 315px;
+        margin: 0 auto 24px auto;
+        border-radius: 8px;
+        padding: 14px 14px;
+
+        .check-del {
+          @include display(flex, space-between, null);
+          input {
+            width: 18px;
+            height: 18px;
+          }
+        }
+
+        .img {
+          width: max-content;
+          margin: 0 auto;
+        }
+
+        .name-product {
+          text-align: center;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 20px;
+        }
+
+        .amount-size {
+          @include display(flex, space-between, null);
+
+          .count {
+            display: flex;
+            button {
+              border: none;
+              outline: none;
+              background-color: #fff;
+            }
+
+            div:nth-child(2) {
+              margin: 0 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

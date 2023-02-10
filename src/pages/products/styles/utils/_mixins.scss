@@ -1,0 +1,15 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin position($index) {
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.9s;
+  position: fixed;
+  padding: 15px;
+  z-index: $index;
+}

@@ -1,0 +1,25 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  margin: 80px 0;
+
+  .page {
+    cursor: pointer;
+    padding: 13px 14px;
+    text-align: center;
+    border-radius: 8px;
+  }
+}
+
+.active {
+  background-color: #2dd06e;
+  color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  .page-container {
+    column-gap: 25px;
+  }
+}

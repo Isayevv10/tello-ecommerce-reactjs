@@ -1,0 +1,26 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  margin: 80px 0;
+}
+.page-container .page {
+  cursor: pointer;
+  padding: 13px 14px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.active {
+  background-color: #2dd06e;
+  color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  .page-container {
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+}/*# sourceMappingURL=pagination.css.map */

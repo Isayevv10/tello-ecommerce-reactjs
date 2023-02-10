@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  width: -moz-max-content;
+  width: max-content;
+}
+.container a {
+  text-decoration: none;
+  color: #000;
+}
+.container h3 {
+  margin-bottom: 32px;
+}
+.container div {
+  margin-bottom: 30px;
+}
+.container div span {
+  cursor: pointer;
+}
+.container div span:nth-child(1) {
+  margin-right: 18px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: none;
+  }
+}/*# sourceMappingURL=headers.css.map */

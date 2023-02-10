@@ -1,0 +1,23 @@
+@import "./utils/mixins";
+
+.container-sidebar {
+  margin-left: -1400px;
+  @include position(1);
+}
+
+.sidenav {
+  margin-left: 0;
+  height: 100%;
+  background-color: #fff;
+  @include position(999);
+}
+.sira-btn {
+  width: 85% !important;
+  background-color: #2dd06e;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 16px 0;
+  position: absolute;
+  bottom: 10%;
+}

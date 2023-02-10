@@ -1,0 +1,113 @@
+.container-signup {
+  display: flex;
+  justify-content: center;
+}
+.container-signup .signup-1 {
+  flex: 50%;
+}
+.container-signup .signup-1 h2 {
+  text-align: center;
+}
+.container-signup .signup-1 .register-choice {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.container-signup .signup-1 .register-choice .img-div-fb {
+  background-image: url("../../assets/images/bg-fb.png");
+  display: inline-block;
+  width: 32px;
+  height: 18px;
+  padding: 7px 0;
+  background-size: cover;
+}
+.container-signup .signup-1 .register-choice .img-div-google {
+  background-image: url("../../assets/images/google-bg.png");
+  display: inline-block;
+  width: 32px;
+  height: 18px;
+  padding: 7px 0;
+  background-size: cover;
+}
+.container-signup .signup-1 .signUp-form {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 24px auto 132px auto;
+}
+.container-signup .signup-1 .signUp-form small {
+  color: red;
+  margin-left: 10px;
+}
+.container-signup .signup-1 .signUp-form input {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+.container-signup .signup-1 .signUp-form input[type=email],
+.container-signup .signup-1 .signUp-form input[type=text],
+.container-signup .signup-1 .signUp-form input[type=number] {
+  text-indent: 16px;
+  margin-top: 8px;
+  border-radius: 8px;
+  height: 48px;
+  width: 312px;
+}
+.container-signup .signup-1 .signUp-form div:nth-child(2) {
+  margin: 24px 0;
+}
+.container-signup .signup-1 .signUp-form button {
+  margin-top: 44px;
+  border-radius: 8px;
+  height: 48px;
+  width: 100%;
+  color: #fff;
+  background-color: #2dd06e;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+.container-signup .signup-1 .signUp-form .linkToLogin {
+  display: none;
+}
+.container-signup .signup-1 .signUp-form .linkToLogin a {
+  text-decoration: none;
+}
+.container-signup .signup-2 {
+  flex: 50%;
+  text-align: center;
+  margin-top: 27px;
+}
+.container-signup .signup-2 div {
+  margin-top: 34px;
+}
+.container-signup .signup-2 div a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+  .container-signup {
+    display: block;
+  }
+  .container-signup .signup-1 .signUp-form input[type=email],
+  .container-signup .signup-1 .signUp-form input[type=text] {
+    width: 303px;
+  }
+  .container-signup .signup-1 .signUp-form .checkboxInput {
+    display: none;
+  }
+  .container-signup .signup-1 .signUp-form div:nth-child(2) {
+    margin: 24px 0 0 0;
+  }
+  .container-signup .signup-1 .signUp-form .linkToLogin {
+    display: block;
+    text-align: center;
+  }
+  .container-signup .signup-2 {
+    display: none;
+  }
+}/*# sourceMappingURL=signUp.css.map */

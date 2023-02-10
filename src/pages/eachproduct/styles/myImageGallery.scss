@@ -1,0 +1,28 @@
+.carousel-root {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  height: 300px;
+  .slide {
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+.thumbs {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.carousel {
+  img {
+    height: 100%;
+    max-height: 300px;
+  }
+}

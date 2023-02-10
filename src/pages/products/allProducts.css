@@ -1,0 +1,16 @@
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  -moz-column-gap: 36px;
+       column-gap: 36px;
+  margin-top: 26px;
+}
+
+@media screen and (max-width: 375px) {
+  .products-container {
+    grid-template-columns: auto;
+  }
+  .products-container .accordion {
+    display: none;
+  }
+}/*# sourceMappingURL=allProducts.css.map */

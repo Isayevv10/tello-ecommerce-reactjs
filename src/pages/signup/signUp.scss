@@ -1,0 +1,118 @@
+@import "./style/utils/mixins";
+
+.container-signup {
+  display: flex;
+  justify-content: center;
+
+  .signup-1 {
+    flex: 50%;
+
+    h2 {
+      text-align: center;
+    }
+
+    .register-choice {
+      display: flex;
+      column-gap: 60px;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 32px;
+
+      .img-div-fb {
+        background-image: url("../../assets/images/bg-fb.png");
+        @include img-size;
+      }
+      .img-div-google {
+        background-image: url("../../assets/images/google-bg.png");
+        @include img-size;
+      }
+    }
+
+    .signUp-form {
+      width: fit-content;
+      margin: 24px auto 132px auto;
+
+      small {
+        color: red;
+        margin-left: 10px;
+      }
+
+      input {
+        background-color: #f2f2f2;
+        border: none;
+        outline: none;
+      }
+
+      input[type="email"],
+      input[type="text"],
+      input[type="number"] {
+        text-indent: 16px;
+        @include size(312px, 8px);
+      }
+
+      div:nth-child(2) {
+        margin: 24px 0;
+      }
+
+      button {
+        @include size(100%, 44px);
+        color: #fff;
+        background-color: #2dd06e;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        line-height: 16px;
+        cursor: pointer;
+      }
+      .linkToLogin {
+        display: none;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .signup-2 {
+    flex: 50%;
+    text-align: center;
+    margin-top: 27px;
+    div {
+      margin-top: 34px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container-signup {
+    display: block;
+
+    .signup-1 {
+      .signUp-form {
+        input[type="email"],
+        input[type="text"] {
+          width: 303px;
+        }
+
+        .checkboxInput {
+          display: none;
+        }
+        div:nth-child(2) {
+          margin: 24px 0 0 0;
+        }
+
+        .linkToLogin {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+
+    .signup-2 {
+      display: none;
+    }
+  }
+}

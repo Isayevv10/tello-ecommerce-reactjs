@@ -1,0 +1,97 @@
+.container-sidebar {
+  margin-left: -1400px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.9s;
+  position: fixed;
+  padding: 15px;
+  z-index: 1;
+}
+
+.sidenav {
+  margin-left: 0;
+  height: 100%;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.9s;
+  position: fixed;
+  padding: 15px;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar #mdiv {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  margin-right: 17px;
+  cursor: pointer;
+}
+.navbar .mdiv {
+  width: 2px;
+  height: 25px;
+  margin-left: 12px;
+  background-color: black;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+.navbar .md {
+  width: 2px;
+  height: 25px;
+  background-color: black;
+  transform: rotate(90deg);
+  z-index: 2;
+}
+.navbar .navbar-logo {
+  background-image: url("../../assets/svg/logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 120px;
+  height: 42px;
+}
+
+.links {
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 16px;
+}
+.links div {
+  margin-top: 21px;
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  gap: 17px;
+  margin-top: 110px;
+  margin-bottom: 35px;
+}
+.btns div:nth-child(1) button {
+  background-color: #fff;
+}
+.btns div:nth-child(2) button {
+  background-color: #2dd06e;
+}
+.btns button {
+  border: 1px solid #2dd06e;
+  border-radius: 8px;
+  padding: 16px 53px;
+}
+.btns button a {
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.0125em;
+}
+.btns button .sign-up {
+  color: #2dd06e;
+}
+.btns button .sign-in {
+  color: #fff;
+}/*# sourceMappingURL=hamburger.css.map */

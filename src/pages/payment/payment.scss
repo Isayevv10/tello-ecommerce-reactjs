@@ -1,0 +1,14 @@
+.payment-container {
+  display: flex;
+  border: 1px solid;
+  column-gap: 25px;
+
+  .flex-1 {
+    flex: 60%;
+    border: 1px solid;
+  }
+  .flex-2 {
+    border: 1px solid;
+    flex: 40%;
+  }
+}

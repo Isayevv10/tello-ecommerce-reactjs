@@ -1,0 +1,14 @@
+@mixin img-size {
+  display: inline-block;
+  width: 32px;
+  height: 18px;
+  padding: 7px 0;
+  background-size: cover;
+}
+
+@mixin size($width, $mt) {
+  margin-top: $mt;
+  border-radius: 8px;
+  height: 48px;
+  width: $width;
+}

@@ -1,0 +1,98 @@
+.footer {
+  font-family: "Euclid Circular A";
+  background-color: #262626;
+  color: #fff;
+}
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 70px;
+}
+.footer .footer-container .logos .big-logo {
+  margin-top: 40px;
+}
+.footer .footer-container .logos .mini-logos {
+  display: flex;
+  -moz-column-gap: 38px;
+       column-gap: 38px;
+  margin-top: 23px;
+}
+.footer .footer-container .connect {
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  margin-bottom: 24px;
+}
+.footer .footer-container .connect:hover {
+  color: #2dd06e;
+}
+.footer .footer-container .help,
+.footer .footer-container .contact,
+.footer .footer-container .menu {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.8;
+}
+.footer .footer-container .help a,
+.footer .footer-container .contact a,
+.footer .footer-container .menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .footer-container .help h4,
+.footer .footer-container .contact h4,
+.footer .footer-container .menu h4 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 50px;
+}
+.footer .footer-author {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer-author .copywrite {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.footer .footer-author-mobile {
+  display: none;
+  text-align: center;
+}
+.footer .footer-author-mobile .copywrite {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 375px) {
+  .footer .footer-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+  .footer .footer-container .help,
+  .footer .footer-container .menu,
+  .footer .footer-container .contact,
+  .footer .footer-container .logos {
+    font-family: Euclid Circular A;
+    text-align: center;
+  }
+  .footer .footer-container .help h4,
+  .footer .footer-container .menu h4,
+  .footer .footer-container .contact h4,
+  .footer .footer-container .logos h4 {
+    margin-top: 45px;
+  }
+  .footer .footer-container .logos .mini-logos {
+    justify-content: center;
+  }
+  .footer .footer-author {
+    display: none;
+  }
+  .footer .footer-author-mobile {
+    display: block;
+    margin-top: 40px;
+    padding-bottom: 17px;
+  }
+}/*# sourceMappingURL=footer.css.map */

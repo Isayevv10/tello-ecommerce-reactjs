@@ -1,0 +1,10 @@
+.profil-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-top: 26px;
+}
+@media screen and (max-width: 375px) {
+  .profil-container {
+    display: block;
+  }
+}

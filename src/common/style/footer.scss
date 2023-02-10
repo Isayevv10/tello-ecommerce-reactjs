@@ -1,0 +1,102 @@
+@import "../style//utils/mixins";
+
+.footer {
+  font-family: "Euclid Circular A";
+  background-color: #262626;
+  color: #fff;
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 70px;
+
+    .logos {
+      .big-logo {
+        margin-top: 40px;
+      }
+      .mini-logos {
+        @include display(38px);
+        margin-top: 23px;
+      }
+    }
+
+    .connect {
+      @include display(18px);
+
+      margin-bottom: 24px;
+      &:hover {
+        color: #2dd06e;
+      }
+    }
+    .help,
+    .contact,
+    .menu {
+      font-size: 16px;
+      line-height: 24px;
+      opacity: 0.8;
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      h4 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .footer-author {
+    display: flex;
+    justify-content: space-around;
+
+    .copywrite {
+      @include display(40px);
+    }
+  }
+
+  .footer-author-mobile {
+    display: none;
+    text-align: center;
+    .copywrite {
+      @include display(40px);
+      justify-content: center;
+    }
+  }
+}
+
+// mobile version starts
+@media screen and (max-width: 375px) {
+  .footer {
+    .footer-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      .help,
+      .menu,
+      .contact,
+      .logos {
+        font-family: Euclid Circular A;
+        text-align: center;
+        h4 {
+          margin-top: 45px;
+        }
+      }
+
+      .logos {
+        .mini-logos {
+          justify-content: center;
+        }
+      }
+    }
+
+    .footer-author {
+      display: none;
+    }
+    .footer-author-mobile {
+      display: block;
+      margin-top: 40px;
+      padding-bottom: 17px;
+    }
+  }
+}
+// mobile version ends

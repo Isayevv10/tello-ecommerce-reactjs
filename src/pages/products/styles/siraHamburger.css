@@ -1,0 +1,36 @@
+.container-sidebar {
+  margin-left: -1400px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.9s;
+  position: fixed;
+  padding: 15px;
+  z-index: 1;
+}
+
+.sidenav {
+  margin-left: 0;
+  height: 100%;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.9s;
+  position: fixed;
+  padding: 15px;
+  z-index: 999;
+}
+
+.sira-btn {
+  width: 85% !important;
+  background-color: #2dd06e;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 16px 0;
+  position: absolute;
+  bottom: 10%;
+}/*# sourceMappingURL=siraHamburger.css.map */

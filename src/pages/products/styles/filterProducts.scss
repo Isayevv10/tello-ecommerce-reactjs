@@ -1,0 +1,104 @@
+@import "./utils/mixins";
+
+.mobie-filter {
+  display: none;
+}
+
+.select-filter {
+  display: flex;
+  justify-content: space-between;
+
+  .count-products {
+    text-indent: 25px;
+  }
+  .select {
+    select {
+      @include size(170px, 40px);
+      border-radius: 8px;
+      border: 1px solid #bdbdbd;
+      cursor: pointer;
+    }
+  }
+}
+
+.all-product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 32px;
+  row-gap: 32px;
+  margin-top: 40px;
+
+  .skeleton {
+    @include size(325px, 293px);
+    border-radius: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .card {
+    background: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.08),
+      0 6px 20px 0 rgba(164, 164, 164, 0.15);
+    border-radius: 12px;
+    text-align: center;
+    &:hover {
+      transform: scale(1.04);
+    }
+
+    .like-btn {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .all-product {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 27px;
+    row-gap: 24px;
+
+    .skeleton {
+      @include size(160px, 220px);
+    }
+
+    .card {
+      position: relative;
+      img {
+        @include size(103px, 122px);
+      }
+      .like-btn {
+        display: block;
+        @include size(25px, 25px);
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: 1px solid;
+      }
+    }
+  }
+
+  .select-filter {
+    .select {
+      display: none;
+    }
+  }
+
+  .mobie-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+    text-align: center;
+
+    .filter-1 {
+      flex: 50%;
+      cursor: pointer;
+    }
+    .filter-2 {
+      flex: 50%;
+      cursor: pointer;
+    }
+  }
+}
