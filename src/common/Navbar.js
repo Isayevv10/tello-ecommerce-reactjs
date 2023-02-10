@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <div>
       <div className='navbar-container'>
-        <Link to='/'>
+        <Link to='/tello-ecommerce-reactjs'>
           <div className='logo'></div>
         </Link>
 
@@ -124,7 +124,7 @@ const Navbar = () => {
             <img src={hamburger} alt='hamburger' />
           </div>
 
-          <Link to='/'>
+          <Link to='/tello-ecommerce-reactjs'>
             <div className='logo'></div>
           </Link>
 
