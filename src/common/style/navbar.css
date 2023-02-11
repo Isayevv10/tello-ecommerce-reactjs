@@ -44,6 +44,8 @@
 .navbar-container .searching .dataResult a .search-container {
   display: flex;
   margin-top: 12px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
 }
 .navbar-container .searching .dataResult a .search-container div:nth-child(2) p {
   margin: 0;

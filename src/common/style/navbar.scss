@@ -35,6 +35,7 @@
         .search-container {
           display: flex;
           margin-top: 12px;
+          column-gap: 12px;
 
           div:nth-child(2) {
             p {
