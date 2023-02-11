@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tello-ecommerce-reactjs/static/css/main.795c89b7.css",
-    "main.js": "/tello-ecommerce-reactjs/static/js/main.a600e917.js",
+    "main.js": "/tello-ecommerce-reactjs/static/js/main.bd4162bb.js",
     "static/media/telefon.png": "/tello-ecommerce-reactjs/static/media/telefon.e0328977fc9613dd4f75.png",
     "static/media/logo.svg": "/tello-ecommerce-reactjs/static/media/logo.e0755949e40cfabc07bd09796bc7b95c.svg",
     "static/media/smart-saat.png": "/tello-ecommerce-reactjs/static/media/smart-saat.624489c419faa50c5062.png",
@@ -25,7 +25,6 @@
     "static/media/twitter.svg": "/tello-ecommerce-reactjs/static/media/twitter.71f5a6872c2ace858e9d4ae53e304a8c.svg",
     "index.html": "/tello-ecommerce-reactjs/index.html",
     "static/media/exit.svg": "/tello-ecommerce-reactjs/static/media/exit.456760c6b4339f266a62ab8b39325f2c.svg",
-    "static/media/place.svg": "/tello-ecommerce-reactjs/static/media/place.b225abb09ccceee1a2f138eba03ad552.svg",
     "static/media/location.svg": "/tello-ecommerce-reactjs/static/media/location.9b7256d499c9bb07d4b3aac5fd936617.svg",
     "static/media/fb-icon.svg": "/tello-ecommerce-reactjs/static/media/fb-icon.a31094c4daa557fde5bcd6e0f9d9f81a.svg",
     "static/media/save.svg": "/tello-ecommerce-reactjs/static/media/save.7cc03a08950be99d10d75fc97eadb6b4.svg",
@@ -38,10 +37,10 @@
     "static/media/no-star.svg": "/tello-ecommerce-reactjs/static/media/no-star.fd3a9f857b7eb1f083f3ead1281122fc.svg",
     "static/media/star.svg": "/tello-ecommerce-reactjs/static/media/star.2be753806b9bf9f70269516361f97eb4.svg",
     "main.795c89b7.css.map": "/tello-ecommerce-reactjs/static/css/main.795c89b7.css.map",
-    "main.a600e917.js.map": "/tello-ecommerce-reactjs/static/js/main.a600e917.js.map"
+    "main.bd4162bb.js.map": "/tello-ecommerce-reactjs/static/js/main.bd4162bb.js.map"
   },
   "entrypoints": [
     "static/css/main.795c89b7.css",
-    "static/js/main.a600e917.js"
+    "static/js/main.bd4162bb.js"
   ]
 }
