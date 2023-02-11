@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tello-ecommerce-reactjs/static/css/main.48b41416.css",
-    "main.js": "/tello-ecommerce-reactjs/static/js/main.02ec3cfc.js",
+    "main.css": "/tello-ecommerce-reactjs/static/css/main.795c89b7.css",
+    "main.js": "/tello-ecommerce-reactjs/static/js/main.a600e917.js",
     "static/media/telefon.png": "/tello-ecommerce-reactjs/static/media/telefon.e0328977fc9613dd4f75.png",
     "static/media/logo.svg": "/tello-ecommerce-reactjs/static/media/logo.e0755949e40cfabc07bd09796bc7b95c.svg",
     "static/media/smart-saat.png": "/tello-ecommerce-reactjs/static/media/smart-saat.624489c419faa50c5062.png",
@@ -37,11 +37,11 @@
     "static/media/message.svg": "/tello-ecommerce-reactjs/static/media/message.9fbcd2c784b124ed28a20657d56fdfe4.svg",
     "static/media/no-star.svg": "/tello-ecommerce-reactjs/static/media/no-star.fd3a9f857b7eb1f083f3ead1281122fc.svg",
     "static/media/star.svg": "/tello-ecommerce-reactjs/static/media/star.2be753806b9bf9f70269516361f97eb4.svg",
-    "main.48b41416.css.map": "/tello-ecommerce-reactjs/static/css/main.48b41416.css.map",
-    "main.02ec3cfc.js.map": "/tello-ecommerce-reactjs/static/js/main.02ec3cfc.js.map"
+    "main.795c89b7.css.map": "/tello-ecommerce-reactjs/static/css/main.795c89b7.css.map",
+    "main.a600e917.js.map": "/tello-ecommerce-reactjs/static/js/main.a600e917.js.map"
   },
   "entrypoints": [
-    "static/css/main.48b41416.css",
-    "static/js/main.02ec3cfc.js"
+    "static/css/main.795c89b7.css",
+    "static/js/main.a600e917.js"
   ]
 }
