@@ -47,7 +47,7 @@ const Footer = () => {
             <Link to='/'>Aksessuarlar</Link>
           </p>
           <p>
-            <Link to='/'>Bütün brendlərutun brendler</Link>
+            <Link to='/'>Bütün brendlər</Link>
           </p>
         </div>
 

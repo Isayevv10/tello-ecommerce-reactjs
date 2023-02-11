@@ -22,6 +22,7 @@ import { setCart1 } from "./redux/recuder/cartReducer";
 import { commerce } from "./commerce";
 import UserMail from "./pages/login/UserMail";
 import Payment from "./pages/payment/Payment";
+import { useLocation } from "react-router-dom";
 
 function App() {
   const dispatch = useDispatch();

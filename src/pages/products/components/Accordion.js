@@ -41,7 +41,7 @@ const Accordion = ({ accs, brendCat, setGetBrend }) => {
                         type='radio'
                         name='brand'
                         id={item.id}
-                        value={item.name}
+                        value={searchParams}
                       />
                       <label
                         htmlFor={item.id}

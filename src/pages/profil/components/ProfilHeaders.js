@@ -1,9 +1,7 @@
 import React from "react";
 import "../style/headers.scss";
-import basket from "../../../assets/svg/basket.svg";
 import heart from "../../../assets/svg/heart.svg";
 import user from "../../../assets/svg/person.svg";
-import place from "../../../assets/svg/place.svg";
 import logout from "../../../assets/svg/logout.svg";
 import { useNavigate, Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
